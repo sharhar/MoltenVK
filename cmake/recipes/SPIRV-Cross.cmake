@@ -1,4 +1,4 @@
-# SPIRV-Cross (https://github.com/KhronosGroup/SPIRV-Cross)
+# SPIRV-Cross (https://github.com/sharhar/SPIRV-Cross)
 # License: Apache-2.0
 if(TARGET SPRIV-Cross::SPRIV-Cross)
     return()
@@ -13,7 +13,7 @@ string(STRIP "${SPIRV_CROSS_COMMIT_HASH}" SPIRV_CROSS_COMMIT_HASH)
 include(CPM)
 CPMAddPackage(
   NAME SPIRV-Cross
-  GITHUB_REPOSITORY KhronosGroup/SPIRV-Cross
+  GITHUB_REPOSITORY sharhar/SPIRV-Cross
   GIT_TAG ${SPIRV_CROSS_COMMIT_HASH}
   SYSTEM TRUE
   OPTIONS
